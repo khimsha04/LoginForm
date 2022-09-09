@@ -87,10 +87,38 @@ h1 {
   border: 1px solid red;
   border-radius: 10px;
   color: black;
+  position: absolute;
+  top: 640px;
+  left: 610px;
+  cursor: pointer;
+}
+.error-mail {
+  display: none;
+  width: 140px;
+  height: 25px;
+  background-color: red;
+  color: white;
+  border: 1px solid red;
+  border-radius: 10px;
+  position: absolute;
+  top: 421px;
+  left: 285px;
+}
+.error-password {
+  display: none;
+  width: 170px;
+  height: 25px;
+  background-color: red;
+  color: white;
+  border: 1px solid red;
+  border-radius: 10px;
+  position: absolute;
+  top: 531px;
+  left: 255px;
 }
 
 .margintop {
-  margin-top: 100px;
+  margin-top: 70px;
 }
 .padding {
   padding: 50px;
@@ -118,7 +146,6 @@ h1 {
 .modal-content {
   font-size: 30px;
   color: #171717;
-  font-family: "Lato";
 }
 
 #close-btn {

@@ -1,11 +1,28 @@
-const email = document.getElementById("email");
-const password = document.getElementById("password");
-
 const modalOpenBtn = document.querySelector("#button");
 const myModal = document.querySelector(".my-modal");
+const email = document.getElementById("email");
+const password = document.getElementById("password");
+const errorEmail = document.querySelector(".error-mail");
+const errorPassword = document.querySelector(".error-password");
+console.log(errorPassword);
+modalOpenBtn.addEventListener("click", function () {
+  let isVallid = true;
+  let emailValue = email.value;
+  let passwordValue = password.value;
 
-modalOpenBtn.addEventListener("click", () => {
-  openModal(".my-modal");
+  if (emailValue.length < 4) {
+    errorEmail.style.display = "block";
+    isVallid = false;
+  }
+  if (passwordValue.length < 2) {
+    errorPassword.style.display = "block";
+    isVallid = false;
+  }
+  if (isVallid) {
+    modalOpenBtn.addEventListener("click", () => {
+      openModal(".my-modal");
+    });
+  }
 });
 
 function openModal(modalSelector) {
@@ -20,23 +37,4 @@ function openModal(modalSelector) {
 function closeModal(modalSelector) {
   const modalNode = document.querySelector(modalSelector);
   modalNode.classList.remove("visible");
-}
-
-enterButton.addEventListener("click", function () {
-  isVallid = true;
-  let emailValue = email.value;
-  if (emailValue.length < 4) {
-    email.style.borderBlockColor = "red";
-    isVallid = false;
-  }
-});
-
-function showErrorMessage(input) {
-  let tagName = input.tagName;
-  input.classList.add("invalid-border");
-  if (tagName != "SELECT") {
-    input.parentElement.children[0].classList.add("invalid");
-    input.parentElement.children[2].classList.add("invalid");
-    console.log(input.parentElement.children[0]);
-  }
 }
