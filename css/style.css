@@ -233,27 +233,32 @@ h1 {
   margin-left: 770px;
 }
 .color {
-  display: none;
+  display: block;
+  margin-left: 40px;
 }
 .black {
   width: 20px;
   height: 20px;
   background-color: black;
+  border: none;
 }
 .purple {
   width: 20px;
   height: 20px;
   background-color: purple;
+  border: none;
 }
 .green {
   width: 20px;
   height: 20px;
   background-color: green;
+  border: none;
 }
 .orange {
   width: 20px;
   height: 20px;
   background-color: orange;
+  border: none;
 }
 .bodyorange {
   background-color: orange;
@@ -263,6 +268,7 @@ h1 {
   width: 20px;
   height: 20px;
   background-color: yellow;
+  border: none;
 }
 .bodyyellow {
   background-color: yellow;
