@@ -7,19 +7,20 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>LoginForm</title>
   </head>
-  <body>
+  <body class="body">
     <header>
       <div class="headerdiv">
         <h1
-          data-text="Worked on this project Zuka Khimshiashvili..."
+          data-text="Zuka Khimshiashvili Worked on this project ..."
           class="myname"
         >
-          Worked on this project Zuka Khimshiashvili...
+          Zuka Khimshiashvili Worked on this project ...
         </h1>
       </div>
     </header>
+    <div class="div">Loading</div>
     <section class="section">
-      <form action="/ save-user" class="margintop" novalidate>
+      <form action="/ save-user" novalidate>
         <div class="padding">
           <div class="email displayflex">
             <label for="email"> ელ-ფოსტა</label>
@@ -30,7 +31,10 @@
             />
             <span class="error-mail">მეილი არასწორია!</span>
           </div>
-          <a class="updatepassword" href="#">პაროლის აღდგენა</a>
+          <div class="displayflex">
+            <span class="updatepassword" href="#">პაროლის აღდგენა</span>
+            <span class="dontwork">დროებით არმუშაობს!</span>
+          </div>
           <div class="password displayflex">
             <label for="password">პაროლი</label>
             <input
@@ -61,6 +65,17 @@
     <div class="headerlast">
       <span>არ გაქვთ ანგარიში? ----</span>
       <a href="#"> დარეგისტრირდით!</a>
+    </div>
+
+    <div class="color">
+      <span>Choose Your Background Color!</span>
+      <div class="colors">
+        <button class="black"></button>
+        <button class="black"></button>
+        <button class="black"></button>
+        <button class="black"></button>
+        <button class="black"></button>
+      </div>
     </div>
     <script src="js/main.js"></script>
   </body>

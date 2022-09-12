@@ -9,7 +9,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 40vh;
+  height: 200px;
   background-color: aqua;
   overflow: hidden;
 }
@@ -18,19 +18,25 @@ h1 {
   position: relative;
   font-size: 40px;
   text-transform: uppercase;
-  color: brown;
-  margin-top: 200px;
+  color: white;
+  margin-top: 145px;
 }
 .myname::before {
   content: attr(data-text);
-  border-right: 2px solid #01fe87;
-  color: red;
+  border-right: 2px solid red;
+  color: blue;
   position: absolute;
   top: 0%;
   left: 0;
   width: 0%;
   height: 100%;
   animation: animate 6s linear infinite;
+}
+.displayblock {
+  display: block;
+}
+.displaynone {
+  display: none;
 }
 
 @keyframes animate {
@@ -63,15 +69,59 @@ h1 {
 .radioandbutton {
   align-items: center;
   display: flex;
-  margin-top: 40px;
   flex-direction: column;
 }
 .enterbutton {
   margin-top: 20px;
 }
+.div {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: white;
+  margin-top: 20px;
+  margin-left: 600px;
+  width: 80px;
+  height: 40px;
+  background-color: red;
+  position: relative;
+  border-radius: 50%;
+  animation: linear infinite;
+  animation-name: example;
+  animation-duration: 4s;
+}
+@keyframes example {
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: yellow;
+    left: 20px;
+    top: 0px;
+  }
+  50% {
+    background-color: blue;
+    left: 20px;
+    top: 20px;
+  }
+  75% {
+    background-color: green;
+    left: 0px;
+    top: 20px;
+  }
+  100% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+}
 .updatepassword {
   margin-top: 30px;
   margin-left: 260px;
+  color: blue;
+  cursor: pointer;
 }
 #password,
 #email {
@@ -88,7 +138,7 @@ h1 {
   border-radius: 10px;
   color: black;
   position: absolute;
-  top: 640px;
+  top: 565px;
   left: 610px;
   cursor: pointer;
 }
@@ -101,9 +151,10 @@ h1 {
   border: 1px solid red;
   border-radius: 10px;
   position: absolute;
-  top: 421px;
+  top: 350px;
   left: 285px;
 }
+
 .error-password {
   display: none;
   width: 170px;
@@ -113,8 +164,20 @@ h1 {
   border: 1px solid red;
   border-radius: 10px;
   position: absolute;
-  top: 531px;
+  top: 494px;
   left: 255px;
+}
+.dontwork {
+  display: none;
+  width: 170px;
+  height: 25px;
+  background-color: red;
+  color: white;
+  border: 1px solid red;
+  border-radius: 10px;
+  position: absolute;
+  top: 430px;
+  left: 882px;
 }
 
 .margintop {
@@ -125,7 +188,7 @@ h1 {
 }
 .headerlast {
   position: absolute;
-  top: 750px;
+  top: 660px;
   left: 528px;
 }
 .modal {
@@ -146,8 +209,19 @@ h1 {
 .modal-content {
   font-size: 30px;
   color: #171717;
+  animation-name: animatetop;
+  animation-duration: 1s;
 }
-
+@keyframes animatetop {
+  from {
+    top: 0;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
 #close-btn {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
@@ -157,4 +231,57 @@ h1 {
   padding: 10px;
   font-size: 20px;
   margin-left: 770px;
+}
+.color {
+  display: none;
+}
+.black {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+}
+.bodyblack {
+  background-color: black;
+  color: white;
+}
+@media (max-width: 1024px) {
+  body {
+    width: 100%;
+    max-width: 900px;
+  }
+  h1 {
+    font-size: 29px;
+  }
+  .div {
+    margin-left: 320px;
+  }
+  .enterbutton {
+    left: 325px;
+  }
+  .headerlast {
+    left: 240px;
+  }
+  .error-mail {
+    top: 310px;
+    left: 182px;
+  }
+  .error-password {
+    top: 452px;
+    left: 158px;
+  }
+  .dontwork {
+    top: 455px;
+    left: 555px;
+  }
+  .color {
+    display: block;
+    position: absolute;
+    top: 710px;
+    left: 140px;
+  }
+  .colors {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
 }
