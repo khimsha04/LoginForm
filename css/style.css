@@ -410,4 +410,10 @@ h1 {
     width: 170px;
     height: 25px;
   }
+  .modal {
+    top: 176px;
+    left: 7px;
+    width: 400px;
+    height: 400px;
+  }
 }
