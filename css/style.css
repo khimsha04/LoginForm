@@ -240,11 +240,52 @@ h1 {
   height: 20px;
   background-color: black;
 }
+.purple {
+  width: 20px;
+  height: 20px;
+  background-color: purple;
+}
+.green {
+  width: 20px;
+  height: 20px;
+  background-color: green;
+}
+.orange {
+  width: 20px;
+  height: 20px;
+  background-color: orange;
+}
+.bodyorange {
+  background-color: orange;
+  color: black;
+}
+.yellow {
+  width: 20px;
+  height: 20px;
+  background-color: yellow;
+}
+.bodyyellow {
+  background-color: yellow;
+  color: black;
+}
 .bodyblack {
   background-color: black;
   color: white;
 }
+.bodygreen {
+  background-color: green;
+  color: white;
+}
+.bodypurple {
+  background-color: purple;
+  color: white;
+}
 @media (max-width: 1024px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
   body {
     width: 100%;
     max-width: 900px;
@@ -262,10 +303,12 @@ h1 {
     left: 240px;
   }
   .error-mail {
+    position: absolute;
     top: 310px;
     left: 182px;
   }
   .error-password {
+    position: absolute;
     top: 452px;
     left: 158px;
   }
@@ -283,5 +326,84 @@ h1 {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+  }
+}
+@media (max-width: 896px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    width: 100%;
+    max-width: 860px;
+  }
+  header {
+    height: 100px;
+  }
+  h1 {
+    margin-top: 100px;
+    font-size: 17px;
+    margin-left: 5px;
+  }
+  .section {
+    width: 400px;
+  }
+  #password,
+  #email {
+    width: 300px;
+  }
+  .updatepassword {
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .dontwork {
+    top: 300px;
+    left: 120px;
+  }
+  .error-mail {
+    position: absolute;
+    top: 210px;
+    left: 22px;
+  }
+  .error-password {
+    position: absolute;
+    top: 320px;
+    left: 10px;
+  }
+  .enterbutton {
+    left: 147px;
+    top: 440px;
+  }
+  .headerlast {
+    top: 550px;
+    left: 25px;
+  }
+  .color {
+    display: block;
+    position: absolute;
+    top: 590px;
+    left: 28px;
+  }
+  .div {
+    margin-left: 106px;
+  }
+}
+@media (max-width: 667px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .section {
+    width: 330px;
+  }
+  #password,
+  #email {
+    width: 250px;
+  }
+  .enterbutton {
+    left: 130px;
+    top: 440px;
   }
 }
