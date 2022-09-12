@@ -406,4 +406,8 @@ h1 {
     left: 130px;
     top: 440px;
   }
+  .dontwork {
+    width: 170px;
+    height: 25px;
+  }
 }
